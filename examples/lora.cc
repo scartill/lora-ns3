@@ -470,7 +470,7 @@ main (int argc, char** argv)
 	*m_stream->GetStream() << ", learning " << learning << ", optimized "  << optimized;
 	*m_stream->GetStream() << ", energy " << monitorEnergy << ", iterations "  << iterationCount<<std::endl;
 
-	*m_stream->GetStream() << "ID, transmitted, received, uniquelyReceived, closestReceived, xCoords, yCoords, avgRetransmission, avgDelay, noAck, acksReceived,timeInSimulation,energyleft << std::endl;
+	*m_stream->GetStream() << "ID, transmitted, received, uniquelyReceived, closestReceived, xCoords, yCoords, avgRetransmission, avgDelay, noAck, acksReceived,timeInSimulation,energyleft" << std::endl;
 	for (uint8_t iterationI=0;iterationI<iterationCount;iterationI++){
 		std::cout << "Iteration: " << (int)iterationI << std::endl;
 		mainBody();
